@@ -90,5 +90,8 @@ class Autoload extends AutoloadConfig
      *
      * @var list<string>
      */
-    public $helpers = [];
+    public $helpers = ['url'];
 }
+$autoload['helper'] = array('url');
+$autoload['helper'] = array('url', 'form', 'debug');
+$autoload['libraries'] = array('database');

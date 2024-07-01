@@ -1,7 +1,6 @@
 <?php namespace App\Controllers\Frontend;
 
 class LoginController extends BaseController {
-
 	public function index() {
 		// Is user logged in? Redirect to main page
 		if($this->data['logged_user'])
@@ -12,7 +11,6 @@ class LoginController extends BaseController {
 
   public function signin() {
     $this->data['errorMsg'] = '';
-
     // if ($this->request->getMethod() === 'POST') {
 
       $email = $this->users->checkInput($this->request->getPost('email'));

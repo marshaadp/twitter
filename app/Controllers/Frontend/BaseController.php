@@ -53,7 +53,6 @@ abstract class BaseController extends Controller
     {
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
-
         // Preload any models, libraries, etc, here.
         $this->comments = new \App\Models\Comments();
     		$this->follow = new \App\Models\Follow();

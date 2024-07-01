@@ -6,8 +6,8 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   		<link rel="stylesheet" href="<?= site_url('/assets/css/style-complete.css'); ?>"/>
-   		<link rel="stylesheet" href="<?= site_url('/assets/css/font-awesome.css'); ?>" />
+   		<link rel="stylesheet" href="<?= base_url('assets/css/style-complete.css'); ?>"/>
+   		<link rel="stylesheet" href="<?= base_url('assets/css/font-awesome.css'); ?>" />
   	</head>
   	<!--Helvetica Neue-->
   <body>

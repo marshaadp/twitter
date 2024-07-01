@@ -7,15 +7,21 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo site_url();?>/assets/images/bird.svg">
-
-    <link rel="stylesheet" href="<?= site_url('/assets/css/style-complete.css');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/css/style.css');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/css/font-awesome.css');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/css/bootstrap.css');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/css/bootstrap.min.css');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/js/popper.min.js');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/js/bootstrap.min.js');?>" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="?php echo site_url();?>/assets/images/bird.svg"> -->
+    <?php 
+    /*echo base_url('public/assets/css/style-complete.css');
+    echo base_url('public/assets/css/style.css');
+    echo base_url('public/assets/css/font-awesome.css');
+    echo base_url('public/assets/css/bootstrap.css');
+    echo base_url('public/assets/css/bootstrap.min.css');*/
+    ?>
+    <link rel='stylesheet' href='<?php echo base_url(); ?>assets/css/style-complete.css' />
+    <link rel='stylesheet' href='<?php echo base_url(); ?>assets/css/style.css' />
+    <link rel='stylesheet' href='<?php echo base_url(); ?>assets/css/font-awesome.css' />
+    <link rel='stylesheet' href='<?php echo base_url(); ?>assets/css/bootstrap.css' />
+    <link rel='stylesheet' href='<?php echo base_url(); ?>assets/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='<?php echo base_url(); ?>assets/js/popper.min.js' />
+    <link rel='stylesheet' href='<?php echo base_url(); ?>assets/js/bootstrap.min.js' />
     <script>
     // Inline JavaScript to define global URLs
     var baseUrl = "<?= base_url() ?>"; // Base URL for your application

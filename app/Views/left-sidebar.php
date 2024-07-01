@@ -9,11 +9,19 @@
 
                 <li><a href="<?php echo site_url('notifications');?>"><i class="fa fa-bell" aria-hidden="true"></i><span>Notifications</span><span id="notificaiton" class="ml-0"><?php if($notify->totalN > 0){echo '<span class="span-i">'.$notify->totalN.'</span>';}?></span></a></li>
 
-                <li id='messagePopup'><a><i class="fa fa-envelope" aria-hidden='true'></i><span>Messages</span><span id='messages'>
-                            <?php if ( $notify->totalM > 0 ) {
-                            echo '<span class="span-i">'.$notify->totalM.'</span>';
-                            }?>
-                        </span></a></li>
+                <li id='messagePopup'>
+    <a href="<?php echo site_url('messages'); ?>">
+        <i class="fa fa-envelope" aria-hidden='true'></i>
+        <span>Messages</span>
+        <span id='messages'>
+            <?php if ($notify->totalM > 0) {
+                echo '<span class="span-i">'.$notify->totalM.'</span>';
+            }?>
+        </span>
+    </a>
+</li>
+
+
                 <li><a href="<?php echo site_url('profile/'.$user->username); ?>"><i class="fa fa-user"></i><span>Profile</span></a></li>
                 <li><a href="<?php echo site_url('settings/account'); ?>"><i class="fa fa-cog"></i><span>Settings</span></a></li>
                 <li><a href="<?php echo site_url('logout'); ?>"><i class="fa fa-power-off"></i><span>Logout</span></a></li>

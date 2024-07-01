@@ -18,7 +18,8 @@ $routes->group('', ['namespace' => 'App\Controllers\Frontend'], function($routes
   $routes->get('signup/(:num)', 'LoginController::signup/$1');
   $routes->post('signup/next', 'LoginController::next');
 
-  $routes->post('tweet/submit', 'TweetController::submit');
+  // $routes->post('tweet/submit', 'TweetController::submit');
+   $routes->post('tweet/submit', 'TweetController::tweetupload');
 
   $routes->get('profile/(:any)', 'ProfileController::index/$1');
   $routes->get('profileedit', 'ProfileController::edit');
@@ -45,11 +46,19 @@ $routes->group('', ['namespace' => 'App\Controllers\Frontend'], function($routes
   $routes->post('ajax/gethashtag', 'AjaxController::getHashtag');
   $routes->post('ajax/imagepopup', 'AjaxController::imagePopup');
   $routes->post('ajax/like', 'AjaxController::like');
-  $routes->post('ajax/messages', 'AjaxController::messages');
+  //$routes->post('ajax/messages', 'AjaxController::messages');
   $routes->get('ajax/notification', 'AjaxController::notification');
   $routes->post('ajax/popuptweets', 'AjaxController::popupTweets');
   $routes->post('ajax/retweet', 'AjaxController::retweet');
   $routes->post('ajax/search', 'AjaxController::search');
   $routes->post('ajax/searchuserinmsg', 'AjaxController::searchUserinMsg');
   $routes->post('ajax/tweetform', 'AjaxController::tweetForm');
+
+  $routes->group('', ['namespace' => 'App\Controllers\Frontend'], function($routes) {
+    $routes->get('messages', 'MessagesController::index');
+    $routes->post('messages/delete/(:num)', 'MessagesController::delete/$1');
+    $routes->post('messages/viewed', 'MessagesController::markAsViewed');
+    $routes->post('messages/send', 'MessagesController::send');});
+
+
 });

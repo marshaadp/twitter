@@ -10,10 +10,10 @@
     <link rel = 'stylesheet' href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'/>
 
 
-    <link rel="stylesheet" href="<?= site_url('/assets/css/style-complete.css');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/css/style.css');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/css/font-awesome.css');?>" />
-    <link rel="stylesheet" href="<?= site_url('/assets/css/bootstrap.css');?>" />
+    <link rel="stylesheet" href="<?= site_url('assets/css/style-complete.css');?>" />
+    <link rel="stylesheet" href="<?= site_url('assets/css/style.css');?>" />
+    <link rel="stylesheet" href="<?= site_url('assets/css/font-awesome.css');?>" />
+    <link rel="stylesheet" href="<?= site_url('assets/css/bootstrap.css');?>" />
     <script>
     // Inline JavaScript to define global URLs
     var baseUrl = "<?= base_url() ?>"; // Base URL for your application
